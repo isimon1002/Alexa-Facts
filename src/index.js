@@ -19,9 +19,9 @@ const Alexa = require('alexa-sdk');
 //Make sure to enclose your value in quotes, like this: const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1';
 const APP_ID = undefined;
 
-const SKILL_NAME = 'Space Facts';
+const SKILL_NAME = 'Animal Facts';
 const GET_FACT_MESSAGE = "Here's your fact: ";
-const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
+const HELP_MESSAGE = 'You can say tell me a animal fact, or, you can say exit... What can I help you with?';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 
@@ -29,20 +29,23 @@ const STOP_MESSAGE = 'Goodbye!';
 //TODO: Replace this data with your own.  You can find translations of this data at http://github.com/alexa/skill-sample-node-js-fact/data
 //=========================================================================================================================================
 const data = [
-    'A year on Mercury is just 88 days long.',
-    'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
-    'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
-    'On Mars, the Sun appears about half the size as it does on Earth.',
-    'Earth is the only planet not named after a god.',
-    'Jupiter has the shortest day of all the planets.',
-    'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
-    'The Sun contains 99.86% of the mass in the Solar System.',
-    'The Sun is an almost perfect sphere.',
-    'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
-    'Saturn radiates two and a half times more energy into space than it receives from the sun.',
-    'The temperature inside the Sun can reach 15 million degrees Celsius.',
-    'The Moon is moving approximately 3.8 cm away from our planet every year.',
+    'The largest animal in the world is the blue whale.  They can reach 100 feet long and 200 tons.  Blue whales are currently endangered as there are less than 25,000 alive today.',
+    'Only female mosquitoes bite since they use nutrients in the blood to help produce their eggs.',
+    'Ruminants are a group of around 150 species of mammals that have four stomachs.  Examples of such animals are cows and goats.',
+    'Houseflies only live 28 days, so no need to worry about them staying in your house very long.',
+    'Giraffes only need five minutes of sleep a day.',
+    'The animal that lays the largest egg is the ostrich whose eggs can weigh over five pounds.',
+    'A female rat can have 2000 children in a single year.',
+    'The largest mammal alive today is the African elephant.  They can weigh up to seven tons and be 11 feet tall.  African elephants are classified as a vulnerable species and there are less than 415,000 in the wild today.',
+    'Bald eagle nests can weight up to three tons and be up to 20 feet deep and have a diameter of 10 feet.',
+    'Sharks kill about nine people per year.  People kill around 100 million sharks per year.',
+    'All sloths have three toes on each of their hind legs. Two-toed sloths and three-toed sloths differ in the number of fingers on their front limbs.',
+    'Bats are the only mammals capable of flight.  Other mammals can glide, but they cannot fly.',
+    'Saltwater crocodiles are the largest reptile.  They can weigh over 2200 pounds and reach over 23 feet.',
+    'Sponges are the oldest animal species that is not extinct.  Sponges, like modem ones, have been around for 580 million years.',
+    'Polar bear skin in black to absorb heat from the sun.  Polar bears are considered a vulnerable species as there are fewer than 31000 alive.'
 ];
+
 
 //=========================================================================================================================================
 //Editing anything below this line might break your skill.
